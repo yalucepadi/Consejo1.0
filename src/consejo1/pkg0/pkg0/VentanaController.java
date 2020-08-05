@@ -580,7 +580,7 @@ public class VentanaController extends TablaSeparadaController implements Initia
             filtroParaCombo(departamentosSQL, "Tumbes", sentenciaSelectFiltro("ranking_departamento_tumbes"));
             filtroParaCombo(departamentosSQL, "Ucayali", sentenciaSelectFiltro("ranking_departamento_ucayali"));
         // inicializarComboItemSelected(departamentos,departamentosSQL);
-              //  System.out.println("Departamento selected:"+departamentosSQL);
+              //      System.out.println("Departamento selected:"+departamentosSQL);
         }
         //2grupo etario
         if (departamentosSQL.equals("todos") && grupoEtarioSQL.equals("todos") && macroRcomboSQL.equals("todos") && perfilParticipantesSQL.equals("todos")

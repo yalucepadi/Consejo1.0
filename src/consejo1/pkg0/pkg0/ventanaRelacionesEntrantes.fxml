@@ -25,10 +25,10 @@
                                  </styleClass></TableColumn>
                                         
                             
-                                        <TableColumn fx:id="cNFrecuenciaEntidad1" prefWidth="167.0" text="nFrecuenciaEntidad1" />
+                                        <TableColumn fx:id="cNFrecuenciaEntidad1" prefWidth="167.0" text="nFrecuencia Entidad1" />
                               <TableColumn fx:id="cRelaciones" prefWidth="167.0" text="Relaciones" />
-                              <TableColumn fx:id="cnFrecuenciaRelacion1" prefWidth="167.0" text="nFrecuenciaRelacion1" />
-                              <TableColumn fx:id="cEntidad2" prefWidth="167.0" text="Entidad2 " />
+                              <TableColumn fx:id="cnFrecuenciaRelacion1" prefWidth="174.0" text="nFrecuencia Relacion1" />
+                              <TableColumn fx:id="cEntidad2" prefWidth="83.0" text="Entidad2 " />
                                     </columns>
                                 </TableView>
                                 <JFXButton fx:id="closeVsBtn" layoutX="1108.0" layoutY="14.0" onAction="#loutOutMethod" />

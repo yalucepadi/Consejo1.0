@@ -155,16 +155,17 @@ public class VentanaRelacionesEntrantes implements Initializable {
                
                     RelacionesEntrantes relacionesEntrantes= new RelacionesEntrantes();
                     relacionesEntrantes.setEntidad1(resultSet.getString("Entidad1"));
-                    relacionesEntrantes.setnFrecuenciaEntidad1(resultSet.getInt("nFrecuenciaEntidad1"));
+                        relacionesEntrantes.setNfrecuenciaE1(resultSet.getInt("nFrecuenciaEntidad1"));
                     relacionesEntrantes.setRelaciones(resultSet.getString("Relaciones"));
-                    relacionesEntrantes.setnFrecuenciaRelacion1(resultSet.getInt("nFrecuenciaRelacion1"));
+                    relacionesEntrantes.setNfrecuenciaR1(resultSet.getInt("nFrecuenciaRelacion1"));
                     relacionesEntrantes.setEntidad2(resultSet.getString("Entidad2"));
                     //ranking.setId(resultSet.getInt("id"));
                 listRanking.add(relacionesEntrantes);
                 cEntidad1.setCellValueFactory(new PropertyValueFactory<>("entidad1"));
-                cNFrecuenciaEntidad1.setCellValueFactory(new PropertyValueFactory<>("nfrecuenciaEntidad1"));
+               
+                cNFrecuenciaEntidad1.setCellValueFactory(new PropertyValueFactory<>("nfrecuenciaE1"));
                 cRelaciones.setCellValueFactory(new PropertyValueFactory<>("relaciones"));
-                cnFrecuenciaRelacion1.setCellValueFactory(new PropertyValueFactory<>("nfrecuenciaRelacion1"));
+                cnFrecuenciaRelacion1.setCellValueFactory(new PropertyValueFactory<>("nfrecuenciaE1"));
                 cEntidad2.setCellValueFactory(new PropertyValueFactory<>("entidad2"));
                 //  cId.setCellValueFactory(new PropertyValueFactory<>("id"));
 

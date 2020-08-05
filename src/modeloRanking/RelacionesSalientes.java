@@ -16,55 +16,115 @@ import javafx.beans.property.StringProperty;
  */
 public class RelacionesSalientes {
      
-    private StringProperty entidad1=  new SimpleStringProperty();
+    private SimpleStringProperty entidad1=  new SimpleStringProperty();
     
-    private  IntegerProperty nfrecuenciaEntidad2= new SimpleIntegerProperty();
+    private  SimpleIntegerProperty nfrecuenciaE2= new SimpleIntegerProperty();
 
-    private StringProperty relaciones=  new SimpleStringProperty();
+    private SimpleStringProperty relaciones=  new SimpleStringProperty();
     
-    private  IntegerProperty nfrecuenciaRelacion2= new SimpleIntegerProperty();
+    private  SimpleIntegerProperty nfrecuenciaR2= new SimpleIntegerProperty();
     
-    private StringProperty entidad2=  new SimpleStringProperty();
+    private SimpleStringProperty entidad2=  new SimpleStringProperty();
 
+    public RelacionesSalientes() {
+    }
+    
+    
+    public RelacionesSalientes(String entidad1, int nfrecuenciaE2, String relaciones, int nfrecuenciaR2, String entidad2) {
+        this.entidad1 = new SimpleStringProperty(entidad1);
+        this.nfrecuenciaE2 = new SimpleIntegerProperty(nfrecuenciaE2);
+        this.relaciones = new SimpleStringProperty(relaciones);
+        this.nfrecuenciaR2 = new SimpleIntegerProperty(nfrecuenciaR2);
+        this.entidad2 = new SimpleStringProperty(entidad2);
+    }
+
+    
+    
     public String getEntidad1() {
         return entidad1.get();
     }
 
+     public SimpleStringProperty   Entidad1property(){
+     
+     return entidad1;
+     }
+     
+    
+    
     public void setEntidad1(String entidad1) {
         this.entidad1.set(entidad1);
     }
 
-    public int getnfrecuenciaEntidad2() {
-        return nfrecuenciaEntidad2.get();
+//
+    
+    public int getNfrecuenciaE2() {
+        return nfrecuenciaE2.get();
+    }
+    
+    public SimpleIntegerProperty   NfrecuenciaE1property(){
+     
+     return nfrecuenciaE2;
+     }
+    public void setNfrecuenciaE2(int nfrecuenciaE2) {
+        this.nfrecuenciaE2.set(nfrecuenciaE2);
     }
 
-    public void setnFrecuenciaEntidad2(int nfrecuenciaEntidad1) {
-        this.nfrecuenciaEntidad2.set(nfrecuenciaEntidad1);
-    }
-
+//    
+    
     public String getRelaciones() {
         return relaciones.get();
     }
+    
+    
+     public SimpleStringProperty   Relacionesproperty(){
+     
+     return entidad1;
+     }
+     
 
     public void setRelaciones(String relaciones) {
         this.relaciones.set(relaciones);
     }
 
-    public int getnFrecuenciaRelacion2() {
-        return nfrecuenciaRelacion2.get();
+  
+    //
+    
+    public int getNfrecuenciaR2() {
+        return nfrecuenciaR2.get();
+    }
+    
+    
+     public SimpleIntegerProperty   NfrecuenciaR2property(){
+     
+     return nfrecuenciaR2;
+     }
+
+    public void setNfrecuenciaR2(int nfrecuenciaR2) {
+        this.nfrecuenciaR2.set(nfrecuenciaR2);
     }
 
-    public void setnFrecuenciaRelacion2(int nfrecuenciaRelacion2) {
-        this.nfrecuenciaRelacion2.set(nfrecuenciaRelacion2);
-    }
-
+    //
+    
     public String getEntidad2() {
         return entidad2.get();
     }
 
+    
+     public SimpleStringProperty   Entidad2property(){
+     
+     return entidad2;
+     }
+     
+    
     public void setEntidad2(String entidad2) {
         this.entidad2.set(entidad2);
     }
+
+ 
+
+   
+    
+    
 
     
     

@@ -156,9 +156,9 @@ public class VentanaRelacionesSalientes implements Initializable {
                 RelacionesSalientes relacionesSalientes= new RelacionesSalientes();
                     relacionesSalientes.setEntidad1(resultSet.getString("Entidad1"));
                     relacionesSalientes.setRelaciones(resultSet.getString("Relaciones"));
-                    relacionesSalientes.setnFrecuenciaRelacion2(resultSet.getInt("nFrecuenciaRelacion2"));
+                    relacionesSalientes.setNfrecuenciaR2(resultSet.getInt("nFrecuenciaRelacion2"));
                      relacionesSalientes.setEntidad2(resultSet.getString("Entidad2"));
-                    relacionesSalientes.setnFrecuenciaEntidad2(resultSet.getInt("nFrecuenciaEntidad2"));
+                    relacionesSalientes.setNfrecuenciaE2(resultSet.getInt("nFrecuenciaEntidad2"));
                     
                     
                    
@@ -166,9 +166,9 @@ public class VentanaRelacionesSalientes implements Initializable {
                 listRanking.add(relacionesSalientes);
                 cEntidad1.setCellValueFactory(new PropertyValueFactory<>("entidad1"));
                 cRelaciones.setCellValueFactory(new PropertyValueFactory<>("relaciones"));
-                 cnFrecuenciaRelacion2.setCellValueFactory(new PropertyValueFactory<>("nfrecuenciaRelacion2"));
+                 cnFrecuenciaRelacion2.setCellValueFactory(new PropertyValueFactory<>("nfrecuenciaR2"));
                    cEntidad2.setCellValueFactory(new PropertyValueFactory<>("entidad2"));
-                cnFrecuenciaRelacion2.setCellValueFactory(new PropertyValueFactory<>("nfrecuenciaEntidad2"));
+                cnFrecuenciaEntidad2.setCellValueFactory(new PropertyValueFactory<>("nfrecuenciaE2"));
                 
                
               
