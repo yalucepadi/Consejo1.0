@@ -696,7 +696,80 @@ public class VentanaController extends TablaSeparadaController implements Initia
             filtroParaComboPara2(grupoEtarioDnSQL, "adultez mayor", fuenteSQL, "jornadas por la educación", sentenciaSelectFiltro("ranking_fGE_adultezMayor_jornadasPorLaEducacion"));
 
         }
+        
+        //Fuente Dep
+         if (departamentosSQL != null && grupoEtarioSQL.equals("todos") && macroRcomboSQL.equals("todos") && perfilParticipantesSQL.equals("todos")
+                && grupoEtarioDnSQL.equals("todos") && fuenteSQL!=null
+                && discapacidadSQL.equals("todos") && paternidadSQL.equals("todos") && gEtnicoSQL.equals("todos")) {
+            
+           
+            
+            filtroParaComboPara2(departamentosSQL, "Amazonas",fuenteSQL, "encuesta virtual", sentenciaSelectFiltro("ranking_fDE_amazonas_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Áncash",fuenteSQL, "encuesta virtual", sentenciaSelectFiltro("ranking_fDE_ancash_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Apurímac",fuenteSQL, "encuesta virtual", sentenciaSelectFiltro("ranking_fDE_apurímac_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Arequipa",fuenteSQL, "encuesta virtual", sentenciaSelectFiltro("ranking_fDE_arequipa_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Ayacucho",fuenteSQL, "encuesta virtual", sentenciaSelectFiltro("ranking_fDE_ayacucho_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Cajamarca",fuenteSQL, "encuesta virtual", sentenciaSelectFiltro("ranking_fDE_cajamarca_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Callao",fuenteSQL, "encuesta virtual", sentenciaSelectFiltro("ranking_fDE_callao_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Cusco",fuenteSQL, "encuesta virtual", sentenciaSelectFiltro("ranking_fDE_cusco_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Huancavelica",fuenteSQL, "encuesta virtual", sentenciaSelectFiltro("ranking_fDE_huancavelica_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Huánuco",fuenteSQL, "encuesta virtual", sentenciaSelectFiltro("ranking_fDE_huánuco_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Ica",fuenteSQL, "encuesta virtual", sentenciaSelectFiltro("ranking_fDE_ica_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Junín",fuenteSQL, "encuesta virtual", sentenciaSelectFiltro("ranking_fDE_junín_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "La Libertad",fuenteSQL, "encuesta virtual", sentenciaSelectFiltro("ranking_fDE_laLibertad_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Lambayeque",fuenteSQL, "encuesta virtual", sentenciaSelectFiltro("ranking_fDE_lamabayeque_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Lima metropolitana",fuenteSQL, "encuesta virtual", sentenciaSelectFiltro("ranking_fDE_limaMetropolitana_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Lima provincia",fuenteSQL, "encuesta virtual", sentenciaSelectFiltro("ranking_fDE_limaProvincia_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Loreto", fuenteSQL, "encuesta virtual",sentenciaSelectFiltro("ranking_fDE_loreto_encuestaVirtual"));
+            //filtroParaComboPara2(departamentosSQL, "Madre de Dios", fuenteSQL, "encuesta virtual",sentenciaSelectFiltro("ranking_departamento_madre_de_dios"));
+            filtroParaComboPara2(departamentosSQL, "Moquegua",fuenteSQL, "encuesta virtual", sentenciaSelectFiltro("ranking_fDE_moquegua_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Pasco", fuenteSQL, "encuesta virtual",sentenciaSelectFiltro("ranking_fDE_pasco_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Piura",fuenteSQL, "encuesta virtual", sentenciaSelectFiltro("ranking_fDE_piura_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Puno",fuenteSQL, "encuesta virtual", sentenciaSelectFiltro("ranking_fDE_puno_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "San Martín",fuenteSQL, "encuesta virtual", sentenciaSelectFiltro("ranking_fDE_sanMartin_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Tacna",fuenteSQL, "encuesta virtual", sentenciaSelectFiltro("ranking_fDE_tacna_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Tumbes", fuenteSQL, "encuesta virtual",sentenciaSelectFiltro("ranking_fDE_tumbes_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Ucayali",fuenteSQL, "encuesta virtual", sentenciaSelectFiltro("ranking_fDE_ucayali_encuestaVirtual"));
+        
+            filtroParaComboPara2(departamentosSQL, "Amazonas",fuenteSQL, "jornadas por la educación", sentenciaSelectFiltro("ranking_fDE_amazonas_jornadasPorLaEducacion"));
+            filtroParaComboPara2(departamentosSQL, "Áncash",fuenteSQL, "jornadas por la educación", sentenciaSelectFiltro("ranking_fDE_ancash_jornadasPorLaEducacion"));
+            filtroParaComboPara2(departamentosSQL, "Apurímac",fuenteSQL, "jornadas por la educación", sentenciaSelectFiltro("ranking_fDE_apurímac_jornadasPorLaEducacion"));
+            filtroParaComboPara2(departamentosSQL, "Arequipa",fuenteSQL, "jornadas por la educación", sentenciaSelectFiltro("ranking_fDE_arequipa_jornadasPorLaEducacion"));
+            filtroParaComboPara2(departamentosSQL, "Ayacucho",fuenteSQL, "jornadas por la educación", sentenciaSelectFiltro("ranking_fDE_ayacucho_jornadasPorLaEducacion"));
+            filtroParaComboPara2(departamentosSQL, "Cajamarca",fuenteSQL, "jornadas por la educación", sentenciaSelectFiltro("ranking_fDE_cajamarca_jornadasPorLaEducacion"));
+            filtroParaComboPara2(departamentosSQL, "Callao",fuenteSQL, "jornadas por la educación", sentenciaSelectFiltro("ranking_fDE_callao_jornadasPorLaEducacion"));
+            filtroParaComboPara2(departamentosSQL, "Cusco",fuenteSQL, "jornadas por la educación", sentenciaSelectFiltro("ranking_fDE_cusco_jornadasPorLaEducacion"));
+            filtroParaComboPara2(departamentosSQL, "Huancavelica",fuenteSQL, "jornadas por la educación", sentenciaSelectFiltro("ranking_fDE_huancavelica_jornadasPorLaEducacion"));
+            filtroParaComboPara2(departamentosSQL, "Huánuco",fuenteSQL, "jornadas por la educación", sentenciaSelectFiltro("ranking_fDE_huánuco_jornadasPorLaEducacion"));
+            filtroParaComboPara2(departamentosSQL, "Ica",fuenteSQL, "jornadas por la educación", sentenciaSelectFiltro("ranking_fDE_ica_jornadasPorLaEducacion"));
+            filtroParaComboPara2(departamentosSQL, "Junín",fuenteSQL, "jornadas por la educación", sentenciaSelectFiltro("ranking_fDE_junín_jornadasPorLaEducacion"));
+            filtroParaComboPara2(departamentosSQL, "La Libertad",fuenteSQL, "jornadas por la educación", sentenciaSelectFiltro("ranking_fDE_laLibertad_jornadasPorLaEducacion"));
+            filtroParaComboPara2(departamentosSQL, "Lambayeque",fuenteSQL, "jornadas por la educación", sentenciaSelectFiltro("ranking_fDE_lamabayeque_jornadasPorLaEducacion"));
+            filtroParaComboPara2(departamentosSQL, "Lima metropolitana",fuenteSQL, "jornadas por la educación", sentenciaSelectFiltro("ranking_fDE_limaMetropolitana_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Lima provincia",fuenteSQL, "jornadas por la educación", sentenciaSelectFiltro("ranking_fDE_limaProvincia_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Loreto", fuenteSQL, "jornadas por la educación",sentenciaSelectFiltro("ranking_fDE_loreto_encuestaVirtual"));
+            filtroParaComboPara2(departamentosSQL, "Madre de Dios", fuenteSQL, "jornadas por la educación",sentenciaSelectFiltro("ranking_fDE_madreDeDios_jornadasPorLaEducacion"));
+            filtroParaComboPara2(departamentosSQL, "Moquegua",fuenteSQL, "jornadas por la educación", sentenciaSelectFiltro("ranking_fDE_moquegua_jornadasPorLaEducacion"));
+            filtroParaComboPara2(departamentosSQL, "Pasco", fuenteSQL, "jornadas por la educación",sentenciaSelectFiltro("ranking_fDE_pasco_jornadasPorLaEducacion"));
+            filtroParaComboPara2(departamentosSQL, "Piura",fuenteSQL, "jornadas por la educación", sentenciaSelectFiltro("ranking_fDE_piura_jornadasPorLaEducacion"));
+            filtroParaComboPara2(departamentosSQL, "Puno",fuenteSQL, "jornadas por la educación", sentenciaSelectFiltro("ranking_fDE_puno_jornadasPorLaEducacion"));
+            filtroParaComboPara2(departamentosSQL, "San Martín",fuenteSQL, "jornadas por la educación", sentenciaSelectFiltro("ranking_fDE_sanMartin_jornadasPorLaEducacion"));
+            filtroParaComboPara2(departamentosSQL, "Tacna",fuenteSQL, "jornadas por la educación", sentenciaSelectFiltro("ranking_fDE_tacna_jornadasPorLaEducacion"));
+            filtroParaComboPara2(departamentosSQL, "Tumbes", fuenteSQL, "jornadas por la educación",sentenciaSelectFiltro("ranking_fDE_tumbes_jornadasPorLaEducacion"));
+            filtroParaComboPara2(departamentosSQL, "Ucayali",fuenteSQL, "jornadas por la educación", sentenciaSelectFiltro("ranking_fDE_ucayali_jornadasPorLaEducacion  "));
 
+
+// inicializarComboItemSelected(departamentos,departamentosSQL);
+              //      System.out.println("Departamento selected:"+departamentosSQL);
+        }
+         //GE Dep    
+         if (departamentosSQL != null && grupoEtarioSQL!=null && macroRcomboSQL.equals("todos") && perfilParticipantesSQL.equals("todos")
+                && grupoEtarioDnSQL.equals("todos") && fuenteSQL.equals("todos")
+                && discapacidadSQL.equals("todos") && paternidadSQL.equals("todos") && gEtnicoSQL.equals("todos")) {
+                      
+         
+         }
+         
     }
 
     public void filtroParaComboPara2(String comBox, String valorCombo, String comBox1, String valorCombo1, String sql) {
@@ -892,7 +965,7 @@ public class VentanaController extends TablaSeparadaController implements Initia
     }
 
     //9
-    @FXML
+    @FXML   
     public void selecionarperfilParticipantes() {
 
         filtrarAndPopulateTabla();
@@ -903,12 +976,12 @@ public class VentanaController extends TablaSeparadaController implements Initia
 
         URL linkRanking = getClass().getResource("/img/chart-bar.png");
         URL linkLogout = getClass().getResource("/img/sign-out-alt.png");
-        URL linkPen = getClass().getResource("/img/logo-pen2036.png");
-        URL linkTodosEdu = getClass().getResource("/img/letras.png");
-        URL linkAbuela = getClass().getResource("/img/madreCsuHijo.png");
+        URL linkPen = getClass().getResource("/img/logoPen2036.png");
+        URL linkTodosEdu = getClass().getResource("/img/consejoNacionalDeducacion.png");
+        URL linkAbuela = getClass().getResource("/img/panelIzquierdo.png");
         Image imagePen = new Image(linkPen.toString(), 200, 96, false, true);
         Image imageTodosEdu = new Image(linkTodosEdu.toString(), 200, 96, false, true);
-        Image imageAbuela = new Image(linkAbuela.toString(), 181, 341, false, true);
+        Image imageAbuela = new Image(linkAbuela.toString(), 300, 464, false, true);
         Image imagenRanking = new Image(linkRanking.toString(), 24, 24, false, true);
         Image imagenLoutOut = new Image(linkLogout.toString(), 20, 20, false, true);
         pen.setImage(imagePen);

@@ -110,7 +110,7 @@ public class LoginController implements Initializable {
     private void colocarImagenBotones() {
 
         URL linkClose = getClass().getResource("/img/window-close.png");
-        URL linkFondoLogin = getClass().getResource("/img/login.png");
+        URL linkFondoLogin = getClass().getResource("/img/fondoLogin.png");
 
         Image imagenClose = new Image(linkClose.toString(), 20, 20, false, true);
         Image imagenFondoLogin= new Image(linkFondoLogin.toString(),706,508,false,true);
