@@ -6,7 +6,10 @@ import com.jfoenix.controls.JFXComboBox;
 import com.mysql.fabric.xmlrpc.base.Data;
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.PreparedStatement;
+import com.sun.javafx.application.HostServicesDelegate;
+import java.awt.Desktop;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
@@ -40,6 +43,8 @@ import javafx.scene.control.TableCell;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import modeloRanking.Ranking;
 
@@ -80,7 +85,10 @@ public class VentanaController extends TablaSeparadaController implements Initia
 
     @FXML
     private JFXButton btnRelacionesSalientes;
-
+   
+    @FXML
+    private JFXButton btnMapa;
+    
     @FXML
     private JFXButton closeBtn;
 
@@ -89,6 +97,9 @@ public class VentanaController extends TablaSeparadaController implements Initia
 
     @FXML
     private Pane necesidadesPanel;
+    
+    
+
 
     @FXML
     private TableView<Ranking> consejoData;
@@ -238,6 +249,41 @@ public class VentanaController extends TablaSeparadaController implements Initia
     String discapacidadSQL = "";
     String paternidadSQL = "";
     String gEtnicoSQL = "";
+    
+    
+    
+    public void changeScreenButtonPushedM(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("mapa.fxml"));
+            
+      
+       
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("stylesheet.css").toExternalForm());
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        //set mouse pressed
+       root.setOnMousePressed(new EventHandler<MouseEvent>() {
+
+            @Override
+            public void handle(MouseEvent event) {
+                xOffsetIft = event.getSceneX();
+                yOffsetIft = event.getSceneY();
+            }
+        });
+        //set mouse drag
+        root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                stage.setX(event.getScreenX() - xOffsetIft);
+                stage.setY(event.getScreenY() - yOffsetIft);
+            }
+        });
+        
+        
+        stage.setScene(scene);
+        stage.show();
+
+    }
 
     public void changeScreenButtonPushedVrE(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("ventanaRelacionesEntrantes.fxml"));
@@ -365,17 +411,18 @@ public class VentanaController extends TablaSeparadaController implements Initia
     @FXML
     private void handleButtonAction(ActionEvent event) {
 
-        if (event.getSource() == rankingBtn) {
+        //event.getSource() == rankingBtn
+       
 
-            rankingPanel.toFront();
-            rankingPanel.setBackground(new Background(new BackgroundFill(Color.rgb(93, 153, 198), CornerRadii.EMPTY, Insets.EMPTY)));
-        }
+          //  rankingPanel.toFront();
+         //   rankingPanel.setBackground(new Background(new BackgroundFill(Color.rgb(93, 153, 198), CornerRadii.EMPTY, Insets.EMPTY)));
+        
 
     }
 
-    public void changeScreenButtonPushed(ActionEvent event) throws IOException {
+    public void changeScreenButtonPushed(ActionEvent event) throws IOException{
         Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
-
+            
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("stylesheet.css").toExternalForm());
 
@@ -401,6 +448,8 @@ public class VentanaController extends TablaSeparadaController implements Initia
         stage.show();
 
     }
+    
+    
 
     @FXML
     private void loutOutMethod(ActionEvent event) {
@@ -445,6 +494,20 @@ public class VentanaController extends TablaSeparadaController implements Initia
         }
 
     }
+    
+    
+    @FXML
+    private void mostrarMapa(ActionEvent event) {
+
+       try {
+            changeScreenButtonPushedM(event);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        } 
+
+
+    }
+    
 
     public String sentenciaSelectFiltro(String tabla) {
 
