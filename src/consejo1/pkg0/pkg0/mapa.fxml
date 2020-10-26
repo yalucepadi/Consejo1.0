@@ -5,16 +5,16 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="700.0" style="-fx-background-color: #ffffff;" styleClass="parent" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="consejo1.pkg0.pkg0.mapaController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" styleClass="parent" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="consejo1.pkg0.pkg0.mapaController">
    <children>
-      <AnchorPane layoutX="-5.0" layoutY="-1.0" prefHeight="508.0" prefWidth="706.0" style="-fx-background-color: #5d99c6;">
+      <AnchorPane prefHeight="500.0" prefWidth="1000.0" style="-fx-background-color: #5d99c6;">
          <children>
-            <Pane fx:id="PaneW" layoutY="38.0" prefHeight="470.0" prefWidth="706.0">
+            <Pane fx:id="PaneW" layoutY="38.0" prefHeight="500.0" prefWidth="1000.0">
                <children>
-                  <WebView fx:id="webViewMapa" layoutX="4.0" prefHeight="475.0" prefWidth="706.0" />
+                  <WebView fx:id="webViewMapa" prefHeight="500.0" prefWidth="1000.0" />
                </children>
             </Pane>
+            <JFXButton fx:id="closeLBtn" layoutX="930.0" layoutY="1.0" onAction="#regresar" />
          </children></AnchorPane>
-      <JFXButton fx:id="closeLBtn" layoutX="638.0" layoutY="1.0" onAction="#regresar" />
    </children>
 </AnchorPane>

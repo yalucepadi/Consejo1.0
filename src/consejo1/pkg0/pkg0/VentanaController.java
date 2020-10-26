@@ -1264,7 +1264,7 @@ filtroParaComboPara2(departamentosSQL, "Ucayali", grupoEtarioDnSQL, "adolescenci
         URL linkAbuela = getClass().getResource("/img/panelIzquierdo.png");
         Image imagePen = new Image(linkPen.toString(), 200, 96, false, true);
         Image imageTodosEdu = new Image(linkTodosEdu.toString(), 200, 96, false, true);
-        Image imageAbuela = new Image(linkAbuela.toString(), 300, 464, false, true);
+        Image imageAbuela = new Image(linkAbuela.toString(), 300, 400, false, true);
         Image imagenRanking = new Image(linkRanking.toString(), 24, 24, false, true);
         Image imagenLoutOut = new Image(linkLogout.toString(), 20, 20, false, true);
         pen.setImage(imagePen);

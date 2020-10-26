@@ -71,8 +71,8 @@ public class mapaController implements Initializable {
        webEngine.load(getClass().getResource("/mapa/MapaPeru.html").toString());
        
       
-          pane = new Pane(webView);
-         Scene scene = new Scene(pane,706,475);
+          //pane = new Pane(webView);
+         Scene scene = new Scene(webView,1000,500);
       Stage primaryStage = new Stage();
         primaryStage.setScene(scene);
         primaryStage.setTitle("");

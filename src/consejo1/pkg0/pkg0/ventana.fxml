@@ -35,7 +35,12 @@
             </HBox>
             <Pane prefHeight="469.0" prefWidth="300.0">
                <children>
-                  <ImageView fx:id="abuela" fitHeight="464.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="abuela" fitHeight="400.0" fitWidth="300.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" />
+                  <JFXButton fx:id="btnMapa" onAction="#changeScreenButtonPushedM" prefHeight="52.0" prefWidth="300.0" styleClass="text-panel" text="Abrir mapa" textAlignment="CENTER" textFill="#e8e6e6" wrapText="true">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </JFXButton>
                </children>
             </Pane>
             </children>
@@ -88,7 +93,6 @@
                         <ImageView fx:id="todosEdu" fitHeight="93.0" fitWidth="200.0" layoutX="684.0" layoutY="511.0" pickOnBounds="true" preserveRatio="true" />
                         <JFXButton fx:id="btnRelacionesEntrantes" layoutX="245.0" layoutY="252.0" onAction="#changeScreenButtonPushedVrE" text="Relaciones entrantes" />
                         <JFXButton fx:id="btnRelacionesSalientes" layoutX="453.0" layoutY="252.0" onAction="#changeScreenButtonPushedVrS" text="Relaciones salientes" />
-                        <JFXButton fx:id="btnMapa" layoutX="131.0" layoutY="252.0" onAction="#changeScreenButtonPushedM" text="Abrir mapa" />
                      </children>
                   </Pane>
                </children>
